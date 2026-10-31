@@ -4,6 +4,21 @@
   <link rel="modulepreload" crossorigin href="/assets/react-Br0ptrPz.js">
   <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-DlPF5HP-.js">
   <link rel="stylesheet" crossorigin href="/assets/index-BF5jAs9q.css">
-</head><body><div id="root"></div><script src="/raiva-widget.js?v=2" defer></script><script src="/teacher-exams/launcher.js?v=1" defer></script>
+
+<script data-smartclass-gh-pages-fix>
+// A previously installed service worker can keep serving the old blank HTML.
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then(function(regs) {
+    regs.forEach(function(reg) { reg.unregister(); });
+  }).catch(function() {});
+}
+window.addEventListener('error', function(event) {
+  if (!event.target || event.target === window) return;
+  var target = event.target;
+  if (target.tagName !== 'SCRIPT' && target.tagName !== 'LINK') return;
+  console.error('SmartClass: missing asset:', target.src || target.href);
+}, true);
+</script>
+</head><body><div id="root"></div><!-- Missing optional script excluded by SmartClass fixer: raiva-widget.js --><script src="/teacher-exams/launcher.js?v=1" defer></script>
 <script src="/admin-users/launcher.js?v=1" defer></script>
 </body></html>

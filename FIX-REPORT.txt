@@ -1,0 +1,9 @@
+SmartClass GitHub Pages fix report
+
+- Hosting target: https://hydrdpstaylya-lang.github.io/
+- GitHub Pages: main branch, / (root).
+- This is STATIC hosting. Node server, Cloudflare AI, and private login need an external backend.
+- Offline/PWA behavior may be reduced: this fix unregisters previously installed service workers to clear stale pages.
+- If the page remains blank, share the NEW Console error screenshot: bundle runtime may be broken.
+- Removed script tags that reference files absent from ZIP: raiva-widget.js
+- Added 404.html for single-page app routes.
